@@ -11,4 +11,3 @@ var largeArray = Generators.GenerateRandom(100000,1,20000);
 SortingAlgorithms.InsertionSort(smallArray);
 SortingAlgorithms.QuickSortClassical(smallArray, 0, 9);
 SortingAlgorithms.QuickSort(midArray);
-
