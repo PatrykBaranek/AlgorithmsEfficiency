@@ -1,0 +1,15 @@
+E:\Programming\LabAlgorithms\bin\Debug\net6.0\LabAlgorithms.exe
+E:\Programming\LabAlgorithms\bin\Debug\net6.0\LabAlgorithms.deps.json
+E:\Programming\LabAlgorithms\bin\Debug\net6.0\LabAlgorithms.runtimeconfig.json
+E:\Programming\LabAlgorithms\bin\Debug\net6.0\LabAlgorithms.dll
+E:\Programming\LabAlgorithms\bin\Debug\net6.0\LabAlgorithms.pdb
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.csproj.AssemblyReference.cache
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.AssemblyInfoInputs.cache
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.AssemblyInfo.cs
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.csproj.CoreCompileInputs.cache
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.dll
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\refint\LabAlgorithms.dll
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.pdb
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\LabAlgorithms.genruntimeconfig.cache
+E:\Programming\LabAlgorithms\obj\Debug\net6.0\ref\LabAlgorithms.dll
