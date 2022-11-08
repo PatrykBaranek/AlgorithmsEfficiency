@@ -1,13 +1,31 @@
 ﻿using LabAlgorithms;
-using System.Diagnostics;
-
-var stopwatch = new Stopwatch();
+using LabAlgorithms.ReportFactory;
 
 var smallArray = Generators.GenerateRandom(100, 1, 11);
 var midArray = Generators.GenerateRandom(1000, 1, 1000);
-var largeArray = Generators.GenerateRandom(100000, 1, 20000);
+var largeArray = Generators.GenerateRandom(10000, 1, 2000);
 
 
-SortingAlgorithms.InsertionSort(smallArray);
-SortingAlgorithms.QuickSortClassical(smallArray, 0, 9);
-SortingAlgorithms.QuickSort(midArray);
+IReportFactory reportFactory = new InsertionReport();
+
+reportFactory.GenerateReport(smallArray);
+reportFactory.GenerateReport(midArray);
+reportFactory.GenerateReport(largeArray);
+
+reportFactory = new MergeReport();
+
+reportFactory.GenerateReport(smallArray);
+reportFactory.GenerateReport(midArray);
+reportFactory.GenerateReport(largeArray);
+
+reportFactory = new QuickClassicalReport();
+
+reportFactory.GenerateReport(smallArray);
+reportFactory.GenerateReport(midArray);
+reportFactory.GenerateReport(largeArray);
+
+reportFactory = new QuickReport();
+
+reportFactory.GenerateReport(smallArray);
+reportFactory.GenerateReport(midArray);
+reportFactory.GenerateReport(largeArray);
