@@ -10,6 +10,7 @@ public static class RaportGenerator
         _stopwatch.Start();
 
         SortingAlgorithms.InsertionSort(arr);
+
         _stopwatch.Stop();
     }
 }
