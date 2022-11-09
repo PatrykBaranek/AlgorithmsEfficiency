@@ -6,7 +6,6 @@ var smallRandomArray = Generators.GenerateRandom(10, 1, 10);
 var smallSortedArray = Generators.GenerateSorted(10, 1, 10);
 var smallReverseArray = Generators.GenerateReversed(10, 1, 10);
 
-
 // mid arrays
 
 var midRandomArray = Generators.GenerateRandom(1000, 1, 1000);
@@ -15,9 +14,9 @@ var midReverseArray = Generators.GenerateReversed(1000, 1, 1000);
 
 // large arrays
 
-var largeRandomArray = Generators.GenerateRandom(100000, 1, 100000);
-var largeSortedArray = Generators.GenerateSorted(100000, 1, 100000);
-var largeReversArray = Generators.GenerateReversed(100000, 1, 100000);
+var largeRandomArray = Generators.GenerateRandom(10000, 1, 10000);
+var largeSortedArray = Generators.GenerateSorted(10000, 1, 10000);
+var largeReversArray = Generators.GenerateReversed(10000, 1, 10000);
 
 
 // Few unique array

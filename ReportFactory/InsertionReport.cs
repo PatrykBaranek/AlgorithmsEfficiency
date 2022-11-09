@@ -17,9 +17,8 @@ public class InsertionReport : IReportFactory
     {
         for (int i = 0; i < 10; i++)
         {
-            var arr1 = (int[])arr.Clone();
             StartTimer();
-            SortingAlgorithms.InsertionSort(arr1);
+            SortingAlgorithms.InsertionSort(arr);
             StopTimer();
         }
 

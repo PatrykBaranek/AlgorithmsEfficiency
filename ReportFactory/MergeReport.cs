@@ -17,9 +17,8 @@ public class MergeReport : IReportFactory
     {
         for (int i = 0; i < 10; i++)
         {
-            var arr1 = (int[])arr.Clone();
             StartTimer();
-            SortingAlgorithms.MergeSort(arr1);
+            SortingAlgorithms.MergeSort(arr);
             StopTimer();
         }
 

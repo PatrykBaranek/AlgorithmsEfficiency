@@ -17,9 +17,8 @@ public class QuickReport : IReportFactory
     {
         for (int i = 0; i < 10; i++)
         {
-            var arr1 = (int[])arr.Clone();
             StartTimer();
-            SortingAlgorithms.QuickSort(arr1);
+            SortingAlgorithms.QuickSort(arr);
             StopTimer();
         }
 

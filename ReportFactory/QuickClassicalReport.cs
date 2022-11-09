@@ -18,9 +18,8 @@ public class QuickClassicalReport : IReportFactory
     {
         for (int i = 0; i < 10; i++)
         {
-            var arr1 = (int[])arr.Clone();
             StartTimer();
-            SortingAlgorithms.QuickSortClassical(arr1);
+            SortingAlgorithms.QuickSortClassical(arr);
             StopTimer();
         }
 
