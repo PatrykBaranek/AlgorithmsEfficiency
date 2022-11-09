@@ -1,4 +1,6 @@
-﻿namespace LabAlgorithms;
+﻿using System;
+
+namespace LabAlgorithms;
 public static class Generators
 {
     public static int[] GenerateRandom(int size, int minValue, int maxValue)
@@ -31,4 +33,17 @@ public static class Generators
 
         return result;
     }
+
+    public static int[] GenerateAlmostSorted(int size, int minValue, int maxValue)
+    {
+        var result = GenerateRandom(size, minValue, maxValue);
+
+        
+
+        return result;
+    }
+
+    
+
+    
 }

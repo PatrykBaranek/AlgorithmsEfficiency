@@ -1,31 +1,74 @@
 ﻿using LabAlgorithms;
-using LabAlgorithms.ReportFactory;
 
-var smallArray = Generators.GenerateRandom(100, 1, 11);
-var midArray = Generators.GenerateRandom(1000, 1, 1000);
-var largeArray = Generators.GenerateRandom(10000, 1, 2000);
+// small arrays
+
+var smallRandomArray = Generators.GenerateRandom(10, 1, 10);
+var smallSortedArray = Generators.GenerateSorted(10, 1, 10);
+var smallReverseArray = Generators.GenerateReversed(10, 1, 10);
 
 
-IReportFactory reportFactory = new InsertionReport();
+// mid arrays
 
-reportFactory.GenerateReport(smallArray);
-reportFactory.GenerateReport(midArray);
-reportFactory.GenerateReport(largeArray);
+var midRandomArray = Generators.GenerateRandom(1000, 1, 1000);
+var midSortedArray = Generators.GenerateSorted(1000, 1, 1000);
+var midReverseArray = Generators.GenerateReversed(1000, 1, 1000);
 
-reportFactory = new MergeReport();
+// large arrays
 
-reportFactory.GenerateReport(smallArray);
-reportFactory.GenerateReport(midArray);
-reportFactory.GenerateReport(largeArray);
+var largeRandomArray = Generators.GenerateRandom(100000, 1, 100000);
+var largeSortedArray = Generators.GenerateSorted(100000, 1, 100000);
+var largeReversArray = Generators.GenerateReversed(100000, 1, 100000);
 
-reportFactory = new QuickClassicalReport();
 
-reportFactory.GenerateReport(smallArray);
-reportFactory.GenerateReport(midArray);
-reportFactory.GenerateReport(largeArray);
+// Few unique array
 
-reportFactory = new QuickReport();
+var fewUniqueArray = Generators.GenerateRandom(100, 1, 10);
 
-reportFactory.GenerateReport(smallArray);
-reportFactory.GenerateReport(midArray);
-reportFactory.GenerateReport(largeArray);
+var caseGenerator = new CaseGenerator();
+
+// 1. small try random
+
+caseGenerator.Start(smallRandomArray, 1, GeneratorsTypes.Random);
+
+// 2. small try sorted
+
+caseGenerator.Start(smallSortedArray, 2, GeneratorsTypes.Sorted);
+
+// 3. small try reverse 
+
+caseGenerator.Start(smallReverseArray, 3, GeneratorsTypes.Reverse);
+
+// 4. small try few unique
+
+caseGenerator.Start(fewUniqueArray, 4, GeneratorsTypes.FewUnique);
+
+// 5. mid try random
+
+caseGenerator.Start(midRandomArray, 5, GeneratorsTypes.Random);
+
+// 6. mid try sorted
+
+caseGenerator.Start(midSortedArray, 6, GeneratorsTypes.Sorted);
+
+// 7. mid try reverse
+
+caseGenerator.Start(midReverseArray, 7, GeneratorsTypes.Reverse);
+// 8. mid try few unique
+
+caseGenerator.Start(fewUniqueArray, 8, GeneratorsTypes.FewUnique);
+
+// 9. large try random
+
+caseGenerator.Start(largeRandomArray, 9, GeneratorsTypes.Random);
+
+// 10. large try sorted
+
+caseGenerator.Start(largeSortedArray, 10, GeneratorsTypes.Sorted);
+
+// 11. large try reverse
+
+caseGenerator.Start(largeReversArray, 11, GeneratorsTypes.Reverse);
+
+// 12. large try few unique
+
+caseGenerator.Start(fewUniqueArray, 12, GeneratorsTypes.FewUnique);

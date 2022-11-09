@@ -11,13 +11,19 @@ public class QuickClassicalReport : IReportFactory
 
     public void StopTimer()
     {
-        Timer.Stop(this.GetType().Name);
+        Timer.Stop();
     }
 
     public void GenerateReport(int[] arr)
     {
-        StartTimer();
-        SortingAlgorithms.QuickSortClassical(arr);
-        StopTimer();
+        for (int i = 0; i < 10; i++)
+        {
+            var arr1 = (int[])arr.Clone();
+            StartTimer();
+            SortingAlgorithms.QuickSortClassical(arr1);
+            StopTimer();
+        }
+
+        Timer.GetAvgTimeAndStandardDeviation(this.GetType().Name.Replace("Report", "Sort"));
     }
 }
